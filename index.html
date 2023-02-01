@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="879977963300-se71v9o6jer60hqjn9el05h0j3ikls8l.apps.googleusercontent.com">
     <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>My Login</title>
     <form>
         <!-- Email input -->
@@ -19,25 +20,38 @@
       </div>
         <!-- Password input -->
         <div class="input-container ic2">
-          <input id="password" class="input" type="password" placeholder=" " />
+          <input id="password" required="" class="input" type="password" placeholder=" " />
           <div class="cut"></div>
           <label for="password" class="placeholder">Password</label> 
-            <!-- An element to toggle between password visibility -->
+        <!-- An element to toggle between password visibility -->
+          <i class="far fa-eye" id="togglePassword" style="margin-left: 240px; margin-top: 10px; cursor: pointer;"></i>
         </div>
       
         <!-- Submit button -->
         <button type="button" class="signin">Sign in</button>
-      
-        <!-- Register buttons -->
-        <div class="field">
-          <a class="ssolink" href="form_data.html" >Sign in with Google</a>
-        </div>
-          </button>
+
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+        <div class="data">
+          <p>Name</p>
+          <p id="name" class="alert alert-success"></p>
+          <p>Email</p>
+          <p id="email"></p>
+          <p>Mobile number</p>
+          <p id="mobile_number"></p>
+          <button type="button" class="btn btn-danger" onclick="SingOut();">Sign Out</button>
+
         </div>
     </div>
       </form>
 </head>
 <body>
+  <script src="function.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+      crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     
 </body>
 </html>
