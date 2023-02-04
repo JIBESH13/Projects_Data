@@ -111,8 +111,6 @@ body {
 }
 .g-signin2 {
     position: absolute;
-    color: #65657b;
-    border-radius: 12px;
     top: 85%;
     left: 50%;
     margin-top: -20px;
