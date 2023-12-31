@@ -110,8 +110,6 @@ body {
     background-color: #06b;
 }
 .g-signin2 {
-    box-sizing: border-box;
-    border-radius: 8px;
     position: absolute;
     top: 85%;
     left: 50%;
