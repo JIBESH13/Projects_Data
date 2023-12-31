@@ -116,6 +116,6 @@ body {
     margin-top: -20px;
     margin-left: -50px;
 }
-.g-signin2 .logo-wrapper {
-    border-radius: 12px;
+.abcRioButton {
+    border-radius: 10px
 }
